@@ -5,23 +5,25 @@ import Home from "./Home";
 
 const App = () => {
   return (
-    <Router>
-      <nav>
-        <ul>
-          <li> hi</li>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </Router>
+      <div>Hello world!</div>
+    </div>
   );
 };
 
